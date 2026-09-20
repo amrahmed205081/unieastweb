@@ -377,29 +377,42 @@ document.addEventListener("DOMContentLoaded", () => {
   initMapViewLink();
   initScrollReveal();
   syncPdfLabels();
-  initHeroVideoReducedMotion();
+  initHeroVideo();
   document.documentElement.classList.add("js-loaded");
 });
 
-const initHeroVideoReducedMotion = () => {
+const initHeroVideo = () => {
   const video = document.querySelector(".hero-video");
   if (!video) return;
-  const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const apply = () => {
-    if (mq.matches) {
-      video.pause();
-      video.removeAttribute("autoplay");
-    } else if (video.paused) {
-      video.setAttribute("autoplay", "");
-      const playPromise = video.play();
-      if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch(() => {});
-      }
+
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("webkit-playsinline", "");
+  video.preload = "metadata";
+
+  const tryPlay = () => {
+    video.muted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(function () {});
     }
   };
-  apply();
-  if (typeof mq.addEventListener === "function") mq.addEventListener("change", apply);
-  else if (typeof mq.addListener === "function") mq.addListener(apply);
+
+  const reduceMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (reduceMq.matches) {
+    try {
+      video.pause();
+    } catch (e) {}
+    return;
+  }
+
+  tryPlay();
 };
 
 window.addEventListener("unieast:langchange", () => {

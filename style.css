@@ -407,6 +407,7 @@ html[dir="rtl"] .nav-cluster {
 /* Hero — full-bleed cinematic video background */
 .hero {
   position: relative;
+  isolation: isolate;
   width: 100%;
   max-width: none;
   min-height: 80vh;
@@ -426,8 +427,10 @@ html[dir="rtl"] .nav-cluster {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center center;
+  object-position: center;
   display: block;
+  opacity: 1;
+  visibility: visible;
   pointer-events: none;
   z-index: 0;
 }
