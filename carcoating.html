@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="دهانات السيارات من شركة يونيست للدهانات والكيماويات الصناعية. اكتشف تشكيلتنا المتنوعة من دهانات السيارات عالية الجودة، بما في ذلك دهانات الأكريليك، بولي يوريثان، ونترو سيلولوزي. منتجاتنا مصممة لتوفير حماية ممتازة وأداء طويل الأمد لأسطح السيارات في مختلف التطبيقات. استعرض مجموعتنا اليوم واختر الحل المثالي لاحتياجاتك.">
-    <title>دهانات السيارات</title>
+    <title data-i18n="meta.carTitle">دهانات السيارات | Unieast Automotive Coatings</title>
+    <meta name="description" content="دهانات السيارات من يونيست: أنظمة أكريليك ومواد تحضير وإزالة.">
+    <link rel="canonical" href="https://www.unieastcoating.com/carcoating.html">
     <link rel="stylesheet" href="style.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logouni.webp" alt="Unieast Logo"></a>
-        </div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="hamburger" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-             <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#products">Products</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-    </header>
-    <h1>دهانات السيارات – نظام الأكريليك</h1>
 
-    <section class="products-section">
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <img src="images/logouni-transparent.png" alt="Unieast Logo" width="160" height="104" decoding="async">
+        </a>
+        <div class="nav-cluster">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="ar" class="is-active">AR</button>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="القائمة">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="page.breadcrumbHome">الرئيسية</a>
+                <span aria-hidden="true">/</span>
+                <a href="product.html" data-i18n="page.breadcrumbProducts">المنتجات</a>
+                <span aria-hidden="true">/</span>
+                <span data-i18n="cats.car">دهانات السيارات</span>
+            </nav>
+            <h1 data-i18n="page.carTitle">دهانات السيارات – نظام الأكريليك</h1>
+            <p data-i18n="page.carLead">أنظمة أكريليك ومواد تحضير وإزالة للتشطيب الاحترافي.</p>
+        </div>
+    </section>
+
+<section class="products-section">
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="ورنيش أكريليك 1000" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">ورنيش أكريليك 1000<br>Acrylic Varnish 1000</h3>
@@ -39,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="مصلب أكريليك (سريع / عادي / بطيء)" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">مصلب أكريليك (سريع / عادي / بطيء)<br>Acrylic Hardener (Fast / Normal / Slow)</h3>
@@ -47,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/WhatsApp Image 2026-01-27 at 6.12.26 PM.jpeg" alt="تنر أكريليك (فرن)" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">تنر أكريليك (فرن)<br>Acrylic Thinner (Oven)</h3>
@@ -55,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="فيلر بطيء K2 (مجموعة)" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">فيلر بطيء K2 (مجموعة)<br>Slow Filler K2 (Set)</h3>
@@ -63,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="دهان أكريليك K2 أبيض لامع 010" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">دهان أكريليك K2 أبيض لامع 010<br>Acrylic Paint K2 White Glossy 010</h3>
@@ -71,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="دهان أكريليك K2 أسود لامع 900" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">دهان أكريليك K2 أسود لامع 900<br>Acrylic Paint K2 Black Glossy 900</h3>
@@ -79,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="دهان أكريليك K2 أبيض فاخر لامع 020" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">دهان أكريليك K2 أبيض فاخر لامع 020<br>Acrylic Paint K2 White Premium Glossy 020</h3>
@@ -87,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="فيلر سريع K1 (برايمر هوائي)" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">فيلر سريع K1 (برايمر هوائي)<br>Fast Filler K1 (Air Primer)</h3>
@@ -95,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/Gemini_Generated_Image_lrkj8glrkj8glrkj.png" alt="مزيل دهان مركب" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">مزيل دهان مركب<br>Paint Remover Compound</h3>
@@ -105,4 +126,71 @@
         </div>
     </section>
 
-
+    <footer class="site-footer site-footer--solo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="images/logouni-transparent.png" alt="Unieast" width="160" height="104" decoding="async" loading="lazy">
+                    </a>
+                    <strong>UNIEAST</strong>
+                    <p data-i18n="footer.tagline">يونى إيست للدهانات والصناعات الكيماوية — حلول طلاء صناعية موثوقة من مصر.</p>
+                    <div class="footer-social" aria-label="Social">
+                        <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.nav">التنقل</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                        <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.products">المنتجات</h4>
+                    <ul>
+                        <li><a href="wood.html" data-i18n="cats.wood">دهانات الأخشاب</a></li>
+                        <li><a href="carcoating.html" data-i18n="cats.car">دهانات السيارات</a></li>
+                        <li><a href="protective.html" data-i18n="cats.protective">دهانات الحماية</a></li>
+                        <li><a href="chemecal.html" data-i18n="cats.chemical">كيماويات بناء</a></li>
+                        <li><a href="specialize.html" data-i18n="cats.specialize">المنتجات المتخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">التواصل</h4>
+                    <p data-i18n="contact.address">مدينة العاشر من رمضان، مصر</p>
+                    <p><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></p>
+                    <div class="footer-phones">
+                        <a class="footer-call-primary" href="tel:01065589002">01065589002</a>
+                        <a class="footer-call-secondary" href="tel:01028224000">01028224000</a>
+                        <a class="footer-call-secondary" href="tel:01004160447">01004160447</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-main">
+                    <p>&copy; <span class="year"></span> Unieast Coating &amp; Chemical Industrial. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+                    <div class="dev-credit">
+                        <span class="dev-label" data-i18n="footer.developedBy">تطوير بواسطة</span>
+                        <span class="dev-names">
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>AMR KAMAL</strong></a>
+                            ·
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>RAVENOX</strong></a>
+                        </span>
+                        <a class="dev-linkedin" href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin" aria-label="LinkedIn — AMR KAMAL / RAVENOX">LinkedIn →</a>
+                    </div>
+                </div>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" data-lang="en">EN</button>
+                    <button type="button" data-lang="ar" class="is-active">AR</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>document.querySelectorAll(".year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+</body>
+</html>

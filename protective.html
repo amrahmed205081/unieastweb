@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="دهانات السيارات والإنشائية من شركة يونيست للدهانات والكيماويات الصناعية. اكتشف تشكيلتنا المتنوعة من دهانات السيارات عالية الجودة ودهانات الإنشاءات المقاومة للعوامل الجوية. منتجاتنا مصممة لتوفير حماية ممتازة وأداء طويل الأمد لأسطح السيارات والمباني. استعرض مجموعتنا اليوم واختر الحل المثالي لاحتياجاتك.">
-    <title>دهانات السيارات والإنشائية</title>
+    <title data-i18n="meta.protectiveTitle">دهانات الحماية | Unieast Protective Coatings</title>
+    <meta name="description" content="دهانات الحماية والإنشائية من يونيست: لاكيهات وبرايمرات ودهانات حماية.">
+    <link rel="canonical" href="https://www.unieastcoating.com/protective.html">
     <link rel="stylesheet" href="style.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logouni.webp" alt="Unieast Logo"></a>
-        </div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="hamburger" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#products">Products</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-    </header>
-    <h1>قائمة المنتجات الانشائية</h1>
 
-    <section class="products-section">
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <img src="images/logouni-transparent.png" alt="Unieast Logo" width="160" height="104" decoding="async">
+        </a>
+        <div class="nav-cluster">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="ar" class="is-active">AR</button>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="القائمة">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="page.breadcrumbHome">الرئيسية</a>
+                <span aria-hidden="true">/</span>
+                <a href="product.html" data-i18n="page.breadcrumbProducts">المنتجات</a>
+                <span aria-hidden="true">/</span>
+                <span data-i18n="cats.protective">دهانات الحماية</span>
+            </nav>
+            <h1 data-i18n="page.protectiveTitle">قائمة المنتجات الإنشائية</h1>
+            <p data-i18n="page.protectiveLead">لاكيهات، برايمرات، ودهانات حماية للأسطح الصناعية والإنشائية.</p>
+        </div>
+    </section>
+
+<section class="products-section">
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/lake.jpg" alt="يوني برايت 900 – لاكيه عالي اللمعة ألوان" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">يوني برايت 900 – لاكيه عالي اللمعة ألوان<br>Uni Bright 900 - High Gloss Lacquer Colors</h3>
@@ -40,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/lake.jpg" alt="لاك 1000 – لاكيه لامع أبيض" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">لاك 1000 – لاكيه لامع أبيض<br>Lac 1000 - Glossy Lacquer White</h3>
@@ -49,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/lake.jpg" alt="لاك 1000 – لاكيه لامع ألوان" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">لاك 1000 – لاكيه لامع ألوان<br>Lac 1000 - Glossy Lacquer Colors</h3>
@@ -58,7 +79,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/lac matt.jpg" alt="فلات 500 – لاكيه مط أبيض" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">فلات 500 – لاكيه مط أبيض<br>Flat 500 - Matt Lacquer White</h3>
@@ -67,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/lac matt.jpg" alt="فلات 500 – لاكيه مط ألوان" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">فلات 500 – لاكيه مط ألوان<br>Flat 500 - Matt Lacquer Colors</h3>
@@ -76,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/برايمر احمر.jpg" alt="يونيجارد 300 – برايمر أحمر" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">يونيجارد 300 – برايمر أحمر<br>Uniguard 300 - Red Primer</h3>
@@ -85,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/برايمر رمادي .jpg" alt="يونيجارد 100 – برايمر رمادي" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">يونيجارد 100 – برايمر رمادي<br>Uniguard 100 - Gray Primer</h3>
@@ -94,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/بلاستيك .jpg" alt="لايت 200 – بلاستيك مط اقتصادي" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">لايت 200 – بلاستيك مط اقتصادي<br>Light 200 - Economic Matt Plastic</h3>
@@ -105,7 +126,7 @@
 
             
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/lake.jpg" alt="يونى برايت -900 لاكيه عالى اللمعه فضى" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">يونى برايت -900 لاكيه عالى اللمعه فضى<br>Uni Bright 900 - High Gloss Silver Lacquer</h3>
@@ -116,4 +137,71 @@
         </div>
     </section>
 
-
+    <footer class="site-footer site-footer--solo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="images/logouni-transparent.png" alt="Unieast" width="160" height="104" decoding="async" loading="lazy">
+                    </a>
+                    <strong>UNIEAST</strong>
+                    <p data-i18n="footer.tagline">يونى إيست للدهانات والصناعات الكيماوية — حلول طلاء صناعية موثوقة من مصر.</p>
+                    <div class="footer-social" aria-label="Social">
+                        <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.nav">التنقل</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                        <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.products">المنتجات</h4>
+                    <ul>
+                        <li><a href="wood.html" data-i18n="cats.wood">دهانات الأخشاب</a></li>
+                        <li><a href="carcoating.html" data-i18n="cats.car">دهانات السيارات</a></li>
+                        <li><a href="protective.html" data-i18n="cats.protective">دهانات الحماية</a></li>
+                        <li><a href="chemecal.html" data-i18n="cats.chemical">كيماويات بناء</a></li>
+                        <li><a href="specialize.html" data-i18n="cats.specialize">المنتجات المتخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">التواصل</h4>
+                    <p data-i18n="contact.address">مدينة العاشر من رمضان، مصر</p>
+                    <p><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></p>
+                    <div class="footer-phones">
+                        <a class="footer-call-primary" href="tel:01065589002">01065589002</a>
+                        <a class="footer-call-secondary" href="tel:01028224000">01028224000</a>
+                        <a class="footer-call-secondary" href="tel:01004160447">01004160447</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-main">
+                    <p>&copy; <span class="year"></span> Unieast Coating &amp; Chemical Industrial. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+                    <div class="dev-credit">
+                        <span class="dev-label" data-i18n="footer.developedBy">تطوير بواسطة</span>
+                        <span class="dev-names">
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>AMR KAMAL</strong></a>
+                            ·
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>RAVENOX</strong></a>
+                        </span>
+                        <a class="dev-linkedin" href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin" aria-label="LinkedIn — AMR KAMAL / RAVENOX">LinkedIn →</a>
+                    </div>
+                </div>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" data-lang="en">EN</button>
+                    <button type="button" data-lang="ar" class="is-active">AR</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>document.querySelectorAll(".year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+</body>
+</html>

@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="دهانات الأخشاب من شركة يونيست للدهانات والكيماويات الصناعية. اكتشف تشكيلتنا المتنوعة من دهانات الأخشاب عالية الجودة، بما في ذلك بولي استر، بولي يوريثان، أكريليك، ونترو سيلولوزي. منتجاتنا مصممة لتوفير حماية ممتازة وأداء طويل الأمد لأسطح الخشب في مختلف التطبيقات. استعرض مجموعتنا اليوم واختر الحل المثالي لاحتياجاتك.">
-    <title>دهانات الأخشاب</title>
+    <title data-i18n="meta.woodTitle">دهانات الأخشاب | Unieast Wood Coatings</title>
+    <meta name="description" content="دهانات الأخشاب من يونيست: بولي استر، بولي يوريثان، أكريليك، ونترو سيلولوزي.">
+    <link rel="canonical" href="https://www.unieastcoating.com/wood.html">
     <link rel="stylesheet" href="style.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logouni.webp" alt="Unieast Logo"></a>
-        </div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="hamburger" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#products">Products</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-    </header>
-    <h1>قائمة منتجات الأخشاب</h1>
 
-    <section class="products-section">
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <img src="images/logouni-transparent.png" alt="Unieast Logo" width="160" height="104" decoding="async">
+        </a>
+        <div class="nav-cluster">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="ar" class="is-active">AR</button>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="القائمة">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="page.breadcrumbHome">الرئيسية</a>
+                <span aria-hidden="true">/</span>
+                <a href="product.html" data-i18n="page.breadcrumbProducts">المنتجات</a>
+                <span aria-hidden="true">/</span>
+                <span data-i18n="cats.wood">دهانات الأخشاب</span>
+            </nav>
+            <h1 data-i18n="page.woodTitle">قائمة منتجات الأخشاب</h1>
+            <p data-i18n="page.woodLead">بولي استر، بولي يوريثان، أكريليك، ونترو سيلولوزي.</p>
+        </div>
+    </section>
+
+<section class="products-section">
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/polyester.jpg" alt="سيلر بولي استر شفاف" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">سيلر بولي استر شفاف<br>Polyester Sealer Transparent</h3>
@@ -40,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/polyester.jpg" alt="برايمر بولي استر أبيض" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">برايمر بولي استر أبيض<br>Polyester Primer White</h3>
@@ -49,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="سيلر بولي يوريثان" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">سيلر بولي يوريثان<br>Polyurethane Sealer</h3>
@@ -58,7 +79,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="سيلر بولي يوريثان حليبي سريع" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">سيلر بولي يوريثان حليبي سريع<br>Polyurethane Sealer Milky Fast</h3>
@@ -67,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="سيرفسر بولي يوريثان" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">سيرفسر بولي يوريثان<br>Polyurethane Surfacer</h3>
@@ -76,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="بولي يوريثان نهائي أبيض لامع" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">بولي يوريثان نهائي أبيض لامع<br>Polyurethane Final White Glossy</h3>
@@ -84,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="ورنيش بولي يوريثان مط / نصف مط" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">ورنيش بولي يوريثان مط / نصف مط<br>Polyurethane Varnish Matt / Semi-Matt</h3>
@@ -93,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="ورنيش بولي يوريثان لامع 2:1" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">ورنيش بولي يوريثان لامع 2:1<br>Polyurethane Varnish Glossy 2:1</h3>
@@ -102,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="ورنيش بولي يوريثان لامع 1:1" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">ورنيش بولي يوريثان لامع 1:1<br>Polyurethane Varnish Glossy 1:1</h3>
@@ -111,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="سيلر أكريليك شفاف" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">سيلر أكريليك شفاف<br>Acrylic Sealer Transparent</h3>
@@ -119,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/poly than.jpg" alt="ورنيش أكريليك مط" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">ورنيش أكريليك مط<br>Acrylic Varnish Matt</h3>
@@ -127,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="images/doco .jpg" alt="سيلر نترو عالي اللزوجة سوبر" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">سيلر نترو عالي اللزوجة سوبر<br>Nitro Sealer High Viscosity Super</h3>
@@ -294,3 +315,71 @@
         </div>
     </section>
 
+    <footer class="site-footer site-footer--solo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="images/logouni-transparent.png" alt="Unieast" width="160" height="104" decoding="async" loading="lazy">
+                    </a>
+                    <strong>UNIEAST</strong>
+                    <p data-i18n="footer.tagline">يونى إيست للدهانات والصناعات الكيماوية — حلول طلاء صناعية موثوقة من مصر.</p>
+                    <div class="footer-social" aria-label="Social">
+                        <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.nav">التنقل</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                        <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.products">المنتجات</h4>
+                    <ul>
+                        <li><a href="wood.html" data-i18n="cats.wood">دهانات الأخشاب</a></li>
+                        <li><a href="carcoating.html" data-i18n="cats.car">دهانات السيارات</a></li>
+                        <li><a href="protective.html" data-i18n="cats.protective">دهانات الحماية</a></li>
+                        <li><a href="chemecal.html" data-i18n="cats.chemical">كيماويات بناء</a></li>
+                        <li><a href="specialize.html" data-i18n="cats.specialize">المنتجات المتخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">التواصل</h4>
+                    <p data-i18n="contact.address">مدينة العاشر من رمضان، مصر</p>
+                    <p><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></p>
+                    <div class="footer-phones">
+                        <a class="footer-call-primary" href="tel:01065589002">01065589002</a>
+                        <a class="footer-call-secondary" href="tel:01028224000">01028224000</a>
+                        <a class="footer-call-secondary" href="tel:01004160447">01004160447</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-main">
+                    <p>&copy; <span class="year"></span> Unieast Coating &amp; Chemical Industrial. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+                    <div class="dev-credit">
+                        <span class="dev-label" data-i18n="footer.developedBy">تطوير بواسطة</span>
+                        <span class="dev-names">
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>AMR KAMAL</strong></a>
+                            ·
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>RAVENOX</strong></a>
+                        </span>
+                        <a class="dev-linkedin" href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin" aria-label="LinkedIn — AMR KAMAL / RAVENOX">LinkedIn →</a>
+                    </div>
+                </div>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" data-lang="en">EN</button>
+                    <button type="button" data-lang="ar" class="is-active">AR</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>document.querySelectorAll(".year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+</body>
+</html>

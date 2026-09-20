@@ -1,208 +1,435 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uni East Coating | Industrial Paints & Coatings Egypt | يونى إيست دهانات</title>
-    <meta name="description" content="Uni East Coating شركة دهانات صناعية في مصر، تقدم دهانات خشب ودهانات سيارات وطلاءات حماية عالية الأداء. Industrial paints, coatings, wood paint, car paint, protective coatings." />
-    <meta name="keywords" content="industrial paints, coatings, Egypt, wood paint, car paint, protective coatings, دهانات صناعية, دهانات خشب, دهانات سيارات" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://unieastcoating.com" />
+    <title data-i18n="meta.homeTitle">يونى إيست للدهانات والصناعات الكيماوية | دهانات صناعية مصر</title>
+    <meta name="description" data-i18n="meta.homeDesc" content="يونى إيست شركة مصرية للدهانات الصناعية والكيماويات: دهانات أخشاب، دهانات سيارات، طلاءات حماية، وكيماويات بناء عالية الأداء.">
+    <meta name="keywords" content="industrial paints, coatings, Egypt, wood paint, car paint, protective coatings, دهانات صناعية, دهانات خشب, دهانات سيارات, يونى إيست">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.unieastcoating.com/">
+    <link rel="alternate" hreflang="ar" href="https://www.unieastcoating.com/">
+    <link rel="alternate" hreflang="en" href="https://www.unieastcoating.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.unieastcoating.com/">
 
-    <meta property="og:title" content="Uni East Coating | Industrial Paints & Coatings Egypt" />
-    <meta property="og:description" content="Uni East Coating شركة دهانات صناعية في مصر: أفضل معالجة للأسطح، دهانات خشب، دهانات سيارات، وطلاءات حماية." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://unieastcoating.com" />
-    <meta property="og:image" content="https://unieastcoating.com/og-image.jpg" />
+    <meta property="og:title" content="Unieast Coating & Chemical Industrial | Industrial Paints Egypt">
+    <meta property="og:description" content="Egyptian industrial coatings manufacturer: wood, automotive, protective coatings, and construction chemicals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.unieastcoating.com/">
+    <meta property="og:image" content="https://www.unieastcoating.com/images/logouni.webp">
+    <meta property="og:locale" content="ar_EG">
+    <meta property="og:locale:alternate" content="en_US">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Uni East Coating | Industrial Paints & Coatings Egypt" />
-    <meta name="twitter:description" content="Uni East Coating شركة دهانات صناعية في مصر: دهانات خشب ودهانات سيارات وطلاءات حماية عالية الأداء." />
-    <meta name="twitter:image" content="https://unieastcoating.com/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unieast Coating & Chemical Industrial">
+    <meta name="twitter:description" content="Industrial paints and coatings from Egypt — wood, automotive, protective, and construction chemicals.">
+    <meta name="twitter:image" content="https://www.unieastcoating.com/images/logouni.webp">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="preload" as="image" href="images/pastel-removebg-preview.webp">
+    <link rel="preload" as="image" href="images/industjpg.jpg">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
     <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logouni.webp" alt="Uni East Coating Logo | يونى إيست" width="220" height="70" decoding="async" loading="eager"></a>
+        <a class="logo" href="index.html">
+            <img src="images/logouni-transparent.png" alt="Unieast Coating Logo | يونى إيست" width="160" height="104" decoding="async" loading="eager">
+        </a>
+        <div class="nav-cluster">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                <button type="button" data-lang="ar" aria-pressed="true" class="is-active">AR</button>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="القائمة">
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
         </div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="hamburger" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </header>
 
-    <!-- Hero Section -->
     <main class="hero" id="home">
-        <div class="hero-text">
-            <h1>الجوده كما يجب ان تكون <br>اختيارك المثالي لدهانات تلبي رغبتك</h1>
-            <p>اكتشف مجموعة منتجاتنا المتخصصة من دهانات الأخشاب، دهانات السيارات، أنظمة الحماية، وكيماويات البناء عالية الجودة لنتائج احترافية.</p>
-            <button class="buy-btn"><a href="product.html">[تعرّف على منتجاتنا]</a></button>
-        </div>
-        <div class="hero-image">
-            <img src="images/pastel-removebg-preview.webp" alt="Uni East Coating hero image | دهانات صناعية" width="1200" height="800" decoding="async" fetchpriority="high">
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="images/industjpg.jpg"
+            aria-hidden="true"
+        >
+            <source src="videos/عاوز_اعمل_فديو_لشركتي_دا_اكبر.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-brand" data-i18n="hero.eyebrow">يونى إيست للدهانات والصناعات الكيماوية</p>
+                <h1 data-i18n="hero.title">الجودة كما يجب أن تكون</h1>
+                <p class="hero-sub" data-i18n="hero.subtitle">اختيارك المثالي لدهانات صناعية تلبي متطلباتك باحترافية.</p>
+                <p data-i18n="hero.lead">اكتشف مجموعة منتجاتنا المتخصصة من دهانات الأخشاب، دهانات السيارات، أنظمة الحماية، وكيماويات البناء عالية الجودة لنتائج احترافية.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="product.html" data-i18n="hero.ctaPrimary">استكشف المنتجات</a>
+                    <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaSecondary">تواصل معنا</a>
+                </div>
+            </div>
         </div>
     </main>
 
-    
-
-    <!-- About Us Section -->
-    <section class="about-us-section" id="about">
-        <div class="about-us-container">
-            <div class="about-us-text">
-                <h2>About us</h2>
-                <p>شركة يونست للدهانات، والصناعات الكيماوية – شركة مصرية.
-تأسست عام 2020 على أيدي مجموعة من الخبرات في مجال صناعات الدهانات بأنواعها، حيث تزيد خبرة عن 25 عام داخل السوق المحلي والتصدير.</p>
-                <p>تُصنَّف أنواع الدهانات (دهانات الحوائط – دهانات الأخشاب – كيماويات البناء – والدهانات المتخصصة) حيث يلبي احتياجات كل عميل حسب الجودة والسعر المناسب، وعدم الاكتفاء بكافة المناطق والمجالات، وتقديم الاستشارات الفنية المتعلقة بعمليات الحماية والدهان، والتواصل الإيجابي مع جميع العملاء، على أمل أن تستحوذ الشركة على نسبة جيدة من مبيعات السوق المحلي والتصدير.</p>
+    <section class="section section-surface about-us-section" id="about">
+        <div class="container about-split">
+            <div class="about-media reveal">
+                <img src="images/about-unieast-products.png" alt="Unieast Coating products | منتجات يونى إيست" width="1024" height="664" decoding="async" loading="lazy">
             </div>
-            <div class="about-us-image">
-                <img src="images/من نجن.webp" alt="About Uni East Coating | من نحن" width="900" height="600" decoding="async" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->   
-    <section class="categories-section" id="products">
-        <h2>منتجاتنا</h2>
-        <div class="categories-grid">
-            <div class="category">
-                <a href="wood.html"><img src="images/دهانات خشب.webp" alt="Uni East wood paint | دهانات الأخشاب" width="400" height="260" decoding="async" loading="lazy"></a>
-                <h3><a href="wood.html">دهانات الأخشاب</a></h3>
-            </div>
-            <div class="category">
-                <a href="carcoating.html"><img src="images/دهانات السيارات.webp" alt="Uni East car coating | دهانات سيارات" width="400" height="260" decoding="async" loading="lazy"></a>
-                <h3><a href="images/دهانات السيارات.webp">دهانات السيارات</a></h3>
-            </div>
-            <div class="category">
-                <a href="protective.html"><img src="images/steel paint.webp" alt="Uni East protective coatings | دهانات حماية" width="400" height="260" decoding="async" loading="lazy"></a>
-                <h3><a href="car.html">دهانات الحماية</a></h3>
-            </div>
-            <div class="category">
-                <a href="chemecal.html"><img src="images/tennis.jpg" alt="Uni East construction chemicals | كيماويات بناء" width="400" height="260" decoding="async" loading="lazy"></a>
-                <h3><a href="chemecal.html">كيماويات بناء</a></h3>
-            </div>
-            <div class="category">
-                <a href="specialize.html"><img src="images/specialize .webp" alt="Uni East specialized products | المنتجات المتخصصة" width="400" height="260" decoding="async" loading="lazy"></a>
-                <h3><a href="specialize.html">المنتجات المتخصصة</a></h3>
+            <div class="about-copy reveal">
+                <span class="eyebrow" data-i18n="about.eyebrow">من نحن</span>
+                <h2 data-i18n="about.title">خبرة صناعية في الدهانات والكيماويات</h2>
+                <p data-i18n="about.p1">شركة يونست للدهانات والصناعات الكيماوية – شركة مصرية. تأسست عام 2020 على أيدي مجموعة من الخبرات في مجال صناعات الدهانات بأنواعها، حيث تزيد الخبرة عن 25 عاماً داخل السوق المحلي والتصدير.</p>
+                <p data-i18n="about.p2">تُصنَّف أنواع الدهانات (دهانات الحوائط – دهانات الأخشاب – كيماويات البناء – والدهانات المتخصصة) حيث تلبي احتياجات كل عميل حسب الجودة والسعر المناسب، مع تقديم الاستشارات الفنية المتعلقة بعمليات الحماية والدهان، والتواصل الإيجابي مع جميع العملاء.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <strong data-i18n="about.stat1Value">2020</strong>
+                        <span data-i18n="about.stat1Label">سنة التأسيس</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong data-i18n="about.stat2Value">+25</strong>
+                        <span data-i18n="about.stat2Label">عاماً من الخبرة</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong data-i18n="about.stat3Value">5</strong>
+                        <span data-i18n="about.stat3Label">خطوط منتجات رئيسية</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="vision-and-mission">
-        <div class="vision-mission-container">
-            <img src="images/مشاريع .webp" alt="Vision and Mission Image" width="960" height="640" decoding="async" loading="lazy">
-            <div class="text-container">
-                <h2>مشاريع نفذت بمنتجاتنا</h2>
-                <p>شركة يونست لديها العديد من المشاريع بمنتجاتها في الكثير من المجالات منها مصانع الأثاث ومصانع الحديد ومصانع البلاستيك والمراكب وتأسيس ملاعب التنس وكرة اليد، كل ما يخص أرضيات الملاعب.</p>
-                <button class="buy-btn"><a href="projects.html">المزيد.... </a></button>
+    <section class="section categories-section" id="products">
+        <div class="container">
+            <div class="section-head centered reveal">
+                <span class="eyebrow" data-i18n="cats.eyebrow">خطوط المنتجات</span>
+                <h2 data-i18n="cats.title">منتجاتنا</h2>
+                <p data-i18n="cats.lead">حلول طلاء وكيماويات صناعية مصممة للتطبيقات المهنية.</p>
+            </div>
+            <div class="categories-grid categories-grid--premium">
+                <article class="category category-card reveal">
+                    <a href="wood.html">
+                        <img src="images/دهانات خشب.webp" alt="Uni East wood paint | دهانات الأخشاب" width="400" height="260" decoding="async" loading="lazy">
+                        <div class="category-content">
+                            <h3 data-i18n="cats.wood">دهانات الأخشاب</h3>
+                            <span class="category-arrow" aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="category category-card reveal">
+                    <a href="carcoating.html">
+                        <img src="images/دهانات السيارات.webp" alt="Uni East car coating | دهانات سيارات" width="400" height="260" decoding="async" loading="lazy">
+                        <div class="category-content">
+                            <h3 data-i18n="cats.car">دهانات السيارات</h3>
+                            <span class="category-arrow" aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="category category-card reveal">
+                    <a href="protective.html">
+                        <img src="images/steel paint.webp" alt="Uni East protective coatings | دهانات حماية" width="400" height="260" decoding="async" loading="lazy">
+                        <div class="category-content">
+                            <h3 data-i18n="cats.protective">دهانات الحماية</h3>
+                            <span class="category-arrow" aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="category category-card reveal">
+                    <a href="chemecal.html">
+                        <img src="images/tennis.jpg" alt="Uni East construction chemicals | كيماويات بناء" width="400" height="260" decoding="async" loading="lazy">
+                        <div class="category-content">
+                            <h3 data-i18n="cats.chemical">كيماويات بناء</h3>
+                            <span class="category-arrow" aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="category category-card reveal">
+                    <a href="specialize.html">
+                        <img src="images/specialize .webp" alt="Uni East specialized products | المنتجات المتخصصة" width="400" height="260" decoding="async" loading="lazy">
+                        <div class="category-content">
+                            <h3 data-i18n="cats.specialize">المنتجات المتخصصة</h3>
+                            <span class="category-arrow" aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Partners Section -->
+    <section class="section section-tint" id="applications">
+        <div class="container">
+            <div class="section-head centered reveal">
+                <span class="eyebrow" data-i18n="apps.eyebrow">التطبيقات</span>
+                <h2 data-i18n="apps.title">مجالات الاستخدام</h2>
+                <p data-i18n="apps.lead">نخدم قطاعات متعددة بحلول طلاء موثوقة.</p>
+            </div>
+            <div class="apps-grid">
+                <a class="app-card reveal" href="wood.html">
+                    <img src="images/دهانات خشب.webp" alt="" loading="lazy" decoding="async">
+                    <span data-i18n="apps.wood">الأخشاب والأثاث</span>
+                </a>
+                <a class="app-card reveal" href="carcoating.html">
+                    <img src="images/دهانات السيارات.webp" alt="" loading="lazy" decoding="async">
+                    <span data-i18n="apps.auto">السيارات والمعادن</span>
+                </a>
+                <a class="app-card reveal" href="protective.html">
+                    <img src="images/steel paint.webp" alt="" loading="lazy" decoding="async">
+                    <span data-i18n="apps.industrial">الطلاءات الصناعية</span>
+                </a>
+                <a class="app-card reveal" href="chemecal.html">
+                    <img src="images/tennis-court.jpg" alt="" loading="lazy" decoding="async">
+                    <span data-i18n="apps.sports">الأرضيات والملاعب</span>
+                </a>
+                <a class="app-card reveal" href="specialize.html">
+                    <img src="images/specialize .webp" alt="" loading="lazy" decoding="async">
+                    <span data-i18n="apps.special">تطبيقات متخصصة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-surface" id="why">
+        <div class="container">
+            <div class="section-head centered reveal">
+                <span class="eyebrow" data-i18n="why.eyebrow">لماذا يونى إيست</span>
+                <h2 data-i18n="why.title">تصنيع موثوق وجودة عملية</h2>
+                <p data-i18n="why.lead">نبني علاقتنا مع العملاء على الجودة والاستشارة الفنية والالتزام.</p>
+            </div>
+            <div class="why-grid">
+                <article class="why-card reveal">
+                    <div class="why-index">01</div>
+                    <h3 data-i18n="why.card1Title">خبرة سوقية</h3>
+                    <p data-i18n="why.card1Text">أكثر من 25 عاماً من الخبرة في صناعات الدهانات محلياً وللتصدير.</p>
+                </article>
+                <article class="why-card reveal">
+                    <div class="why-index">02</div>
+                    <h3 data-i18n="why.card2Title">تنوع المنتجات</h3>
+                    <p data-i18n="why.card2Text">خطوط متكاملة للأخشاب والسيارات والحماية وكيماويات البناء والتخصصات.</p>
+                </article>
+                <article class="why-card reveal">
+                    <div class="why-index">03</div>
+                    <h3 data-i18n="why.card3Title">دعم فني</h3>
+                    <p data-i18n="why.card3Text">استشارات فنية لعمليات الحماية والدهان بما يناسب تطبيقك.</p>
+                </article>
+                <article class="why-card reveal">
+                    <div class="why-index">04</div>
+                    <h3 data-i18n="why.card4Title">جودة تناسب الاحتياج</h3>
+                    <p data-i18n="why.card4Text">حلول تراعي الجودة والسعر المناسب لكل قطاع صناعي.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects-teaser vision-and-mission" id="projects-teaser">
+        <div class="container projects-split vision-mission-container">
+            <img class="reveal" src="images/مشاريع .webp" alt="Projects finished with Unieast products | مشاريع يونى إيست" width="960" height="640" decoding="async" loading="lazy">
+            <div class="projects-copy text-container reveal">
+                <span class="eyebrow" data-i18n="projects.eyebrow">المشاريع</span>
+                <h2 data-i18n="projects.title">مشاريع نُفذت بمنتجاتنا</h2>
+                <p data-i18n="projects.lead">استُخدمت منتجات يونست في مصانع الأثاث والحديد والبلاستيك والمراكب، وتأسيس ملاعب التنس وكرة اليد، وكل ما يخص أرضيات الملاعب.</p>
+                <a class="btn btn-primary" href="projects.html" data-i18n="projects.cta">عرض المشاريع</a>
+            </div>
+        </div>
+    </section>
+
     <section class="partners-section">
-        <h2>Our Partners in Success</h2>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide-track">
-                    <img src="images/akljpg.jpg" alt="Partner Uni East Coating 1" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/artest.png" alt="Partner Uni East Coating 2" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/beko.png" alt="Partner Uni East Coating 3" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/elmaco.png" alt="Partner 4" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/elswedy.png" alt="Partner 5" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/fresh.png" alt="Partner 6" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/elaraby.png" alt="Partner 7" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/3brothers.png" alt="Partner 8" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/kabany.png" alt="Partner 9" width="170" height="80" decoding="async" loading="lazy">
-                    <img src="images/living in .png" alt="Partner 10" width="170" height="80" decoding="async" loading="lazy">
-                    <!-- Duplicate for seamless loop -->
-                    <img src="images/partener .jpg" alt="Partner 1" width="170" height="80" decoding="async" loading="lazy">
+        <div class="container">
+            <h2 class="reveal" data-i18n="partners.title">شركاؤنا في النجاح</h2>
+            <div class="slider-container reveal">
+                <div class="slider">
+                    <div class="slide-track">
+                        <img src="images/akljpg.jpg" alt="Partner Uni East Coating 1" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/artest.png" alt="Partner Uni East Coating 2" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/beko.png" alt="Partner Uni East Coating 3" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/elmaco.png" alt="Partner 4" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/elswedy.png" alt="Partner 5" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/fresh.png" alt="Partner 6" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/elaraby.png" alt="Partner 7" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/3brothers.png" alt="Partner 8" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/kabany.png" alt="Partner 9" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/living in .png" alt="Partner 10" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/partener .jpg" alt="Partner 11" width="170" height="80" decoding="async" loading="lazy">
+                        <img src="images/akljpg.jpg" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/artest.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/beko.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/elmaco.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/elswedy.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/fresh.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/elaraby.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/3brothers.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/kabany.png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/living in .png" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                        <img src="images/partener .jpg" alt="" width="170" height="80" decoding="async" loading="lazy" aria-hidden="true">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
+
+    <section class="cta-band">
+        <div class="container reveal">
+            <h2 data-i18n="contact.title">تواصل معنا</h2>
+            <p data-i18n="contact.lead">راسلنا للاستفسار عن المنتجات أو الدعم الفني أو طلب عرض.</p>
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaSecondary">تواصل معنا</a>
+        </div>
+    </section>
+
     <footer class="contact-section" id="contact">
-        <h2>Contact Us</h2>
-        <div class="footer-contact-grid">
-            <div class="footer-map">
-                <div class="location-pin">
-                    <span>📍</span>
-                    <p>10th Of Ramadan City</p>
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow" data-i18n="contact.eyebrow">تواصل</span>
+                <h2 data-i18n="contact.title">تواصل معنا</h2>
+                <p data-i18n="contact.lead">راسلنا للاستفسار عن المنتجات أو الدعم الفني أو طلب عرض.</p>
+            </div>
+
+            <div class="footer-contact-grid">
+                <div class="footer-map reveal">
+                    <div class="location-pin">
+                        <span aria-hidden="true">📍</span>
+                        <p>10th Of Ramadan City</p>
+                    </div>
+                    <div class="locations-table-wrapper">
+                        <table class="locations-table">
+                            <tbody>
+                                <tr>
+                                    <th data-i18n="contact.addressLabel">العنوان</th>
+                                    <td data-i18n="contact.address">مدينة العاشر من رمضان، مصر</td>
+                                </tr>
+                                <tr>
+                                    <th data-i18n="contact.emailLabel">البريد الإلكتروني</th>
+                                    <td><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></td>
+                                </tr>
+                                <tr>
+                                    <th data-i18n="contact.phonesLabel">الهواتف</th>
+                                    <td class="phone-ltr">
+                                        <a href="tel:01065589002"><strong>01065589002</strong></a>,
+                                        <a href="tel:01028224000">01028224000</a>,
+                                        <a href="tel:01004160447">01004160447</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th data-i18n="contact.mapLabel">الموقع</th>
+                                    <td><a id="viewLocationLink" href="https://maps.app.goo.gl/Qn5R7rCr9Xt1xeTC9?g_st=iw" target="_blank" rel="noopener noreferrer" data-i18n="contact.mapLink">عرض الموقع على الخريطة</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="locations-table-wrapper">
-                    <table class="locations-table">
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Address</td>
-                                <td>10th Of Ramadan City, Egypt</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></td>
-                            </tr>
-                            <tr>
-                                <td>Phones</td>
-                                <td><a href="tel:+201028224000">01028224000</a>, <a href="tel:+201004160447">01004160447</a>, <a href="tel:+201065589002">01065589002</a></td>
-                            </tr>
-                            <tr>
-                                <td>Map Link</td>
-                                <td><a id="viewLocationLink" href="https://maps.app.goo.gl/Qn5R7rCr9Xt1xeTC9?g_st=iw" target="_blank" rel="noopener noreferrer">View location</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                <div class="contact-form reveal">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <label for="name" data-i18n="contact.formName">الاسم</label>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="contact.formNamePh" placeholder="اسمك" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email" data-i18n="contact.formEmail">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" data-i18n-placeholder="contact.formEmailPh" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phone" data-i18n="contact.formPhone">الهاتف</label>
+                            <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.formPhonePh" placeholder="010xxxxxxxx" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="message" data-i18n="contact.formMessage">الرسالة</label>
+                            <textarea id="message" name="message" rows="4" data-i18n-placeholder="contact.formMessagePh" placeholder="كيف يمكننا المساعدة؟" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="buy-btn" data-i18n="contact.submit">إرسال الرسالة</button>
+                            <span id="formMsg" aria-live="polite"></span>
+                        </div>
+                    </form>
                 </div>
             </div>
 
-            <div class="contact-form">
-                <form id="contactForm" novalidate>
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="010xxxxxxxx" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
-                    </div>
-                    <div class="form-row">
-                        <button type="submit" class="buy-btn">Send Message</button>
-                        <span id="formMsg" aria-live="polite" style="margin-left:12px;color:#fff"></span>
-                    </div>
-                </form>
+            <div class="social-media">
+                <h3 data-i18n="contact.follow">تابعنا</h3>
+                <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook Page">Facebook</a>
+                <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer" aria-label="Instagram Page">Instagram</a>
             </div>
-        </div>
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" aria-label="Facebook Page">Facebook</a> |
-            <a href="https://www.instagram.com/uni.east" target="_blank" aria-label="Instagram Page">Instagram</a>
+
+            <div class="site-footer">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a class="footer-logo" href="index.html">
+                            <img src="images/logouni-transparent.png" alt="Unieast" width="160" height="104" decoding="async" loading="lazy">
+                        </a>
+                        <strong>UNIEAST</strong>
+                        <p data-i18n="footer.tagline">يونى إيست للدهانات والصناعات الكيماوية — حلول طلاء صناعية موثوقة من مصر.</p>
+                        <div class="footer-social" aria-label="Social">
+                            <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.nav">التنقل</h4>
+                        <ul>
+                            <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+                            <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+                            <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                            <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.products">المنتجات</h4>
+                        <ul>
+                            <li><a href="wood.html" data-i18n="cats.wood">دهانات الأخشاب</a></li>
+                            <li><a href="carcoating.html" data-i18n="cats.car">دهانات السيارات</a></li>
+                            <li><a href="protective.html" data-i18n="cats.protective">دهانات الحماية</a></li>
+                            <li><a href="chemecal.html" data-i18n="cats.chemical">كيماويات بناء</a></li>
+                            <li><a href="specialize.html" data-i18n="cats.specialize">المنتجات المتخصصة</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.contact">التواصل</h4>
+                        <p data-i18n="contact.address">مدينة العاشر من رمضان، مصر</p>
+                        <p><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></p>
+                        <div class="footer-phones">
+                            <a class="footer-call-primary" href="tel:01065589002">01065589002</a>
+                            <a class="footer-call-secondary" href="tel:01028224000">01028224000</a>
+                            <a class="footer-call-secondary" href="tel:01004160447">01004160447</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-main">
+                        <p>&copy; <span id="year"></span> Unieast Coating &amp; Chemical Industrial. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+                        <div class="dev-credit">
+                            <span class="dev-label" data-i18n="footer.developedBy">تطوير بواسطة</span>
+                            <span class="dev-names">
+                                <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>AMR KAMAL</strong></a>
+                                ·
+                                <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>RAVENOX</strong></a>
+                            </span>
+                            <a class="dev-linkedin" href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin" aria-label="LinkedIn — AMR KAMAL / RAVENOX">LinkedIn →</a>
+                        </div>
+                    </div>
+                    <div class="lang-switch" role="group" aria-label="Language">
+                        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                        <button type="button" data-lang="ar" aria-pressed="true" class="is-active">AR</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

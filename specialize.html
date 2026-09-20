@@ -3,114 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="دهانات متخصصه في المجالات الصناعبه المتنوعه من شركة يونيست للدهانات والكيماويات الصناعية. اكتشف تشكيلتنا المتنوعة من دهانات السيارات عالية الجودة ودهانات الإنشاءات المقاومة للعوامل الجوية. منتجاتنا مصممة لتوفير حماية ممتازة وأداء طويل الأمد لأسطح السيارات والمباني. استعرض مجموعتنا اليوم واختر الحل المثالي لاحتياجاتك.">
-    <title>المنتجات المتخصصة</title>
+    <title data-i18n="meta.specializeTitle">المنتجات المتخصصة | Unieast Specialized Products</title>
+    <meta name="description" content="المنتجات المتخصصة من يونيست لتطبيقات صناعية متنوعة.">
+    <link rel="canonical" href="https://www.unieastcoating.com/specialize.html">
     <link rel="stylesheet" href="style.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logouni.webp" alt="Unieast Logo"></a>
-        </div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="hamburger" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-        <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#products">Products</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </header>
 
-<h2 align="center">المنتجات المتخصصة</h2>
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <img src="images/logouni-transparent.png" alt="Unieast Logo" width="160" height="104" decoding="async">
+        </a>
+        <div class="nav-cluster">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="ar" class="is-active">AR</button>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="القائمة">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="page.breadcrumbHome">الرئيسية</a>
+                <span aria-hidden="true">/</span>
+                <a href="product.html" data-i18n="page.breadcrumbProducts">المنتجات</a>
+                <span aria-hidden="true">/</span>
+                <span data-i18n="cats.specialize">المنتجات المتخصصة</span>
+            </nav>
+            <h1 data-i18n="page.specializeTitle">المنتجات المتخصصة</h1>
+            <p data-i18n="page.specializeLead">حلول طلاء وكيماويات لتطبيقات صناعية متنوعة.</p>
+        </div>
+    </section>
+
+<!-- Navbar -->
+    
+
+<h2 align="center" data-i18n="page.specializeTitle">المنتجات المتخصصة</h2>
 
 <section class="products-section">
     <div class="products-grid">
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/بلاستيك.png" alt="دهانات الأسطح البلاستيكية المتخصصة" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">دهانات الأسطح البلاستيكية المتخصصة</h3>
                 <span class="product-category">دهانات عالية الالتصاق مخصصة لجميع أنواع البلاستيك مثل ABS, PP, BBT, EST مع مقاومة ممتازة للاحتكاك والعوامل الجوية</span>
-                <p><strong>مجالات الاستخدام:</strong> الأدوات المنزلية، إكسسوارات الأثاث، أجزاء السيارات، المنتجات الديكورية</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> الأدوات المنزلية، إكسسوارات الأثاث، أجزاء السيارات، المنتجات الديكورية</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/سلك.png" alt="ورنيشات العزل الكهربائي" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">ورنيشات العزل الكهربائي</h3>
                 <span class="product-category">ورنيشات خاصة للعزل الكهربائي توفر حماية عالية ضد الرطوبة والحرارة وتمنع التسريب الكهربائي</span>
-                <p><strong>مجالات الاستخدام:</strong> الملفات الكهربائية، الموتورات، المحولات، الصناعات الكهربائية</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> الملفات الكهربائية، الموتورات، المحولات، الصناعات الكهربائية</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/جلد.jpg" alt="دهانات الجلد الصناعي" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">دهانات الجلد الصناعي</h3>
                 <span class="product-category">دهانات مرنة مصممة خصيصًا للجلد الصناعي مع ثبات لون ومقاومة للتشققات</span>
-                <p><strong>مجالات الاستخدام:</strong> المفروشات، المقاعد، التنجيد، السيارات، المنتجات الجلدية</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> المفروشات، المقاعد، التنجيد، السيارات، المنتجات الجلدية</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/تيفال.jpg" alt="مواد التيفلون" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">مواد التيفلون</h3>
                 <span class="product-category">طلاءات تفلون مقاومة للالتصاق والحرارة العالية وتوفر سطحًا ناعمًا وسهل التنظيف</span>
-                <p><strong>مجالات الاستخدام:</strong> أواني الطهي، الأدوات المنزلية، بعض المكونات الكهربائية</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> أواني الطهي، الأدوات المنزلية، بعض المكونات الكهربائية</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/شجوم.png" alt="منظفات الشحوم والزيوت الصناعية" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">منظفات الشحوم والزيوت الصناعية</h3>
                 <span class="product-category">كيماويات قوية لإزالة الشحوم والزيوت الثقيلة بدون التأثير على الأسطح المعدنية أو البلاستيكية</span>
-                <p><strong>مجالات الاستخدام:</strong> المصانع، خطوط الإنتاج، المعدات الصناعية، الورش</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> المصانع، خطوط الإنتاج، المعدات الصناعية، الورش</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/Gemini_Generated_Image_lrkj8glrkj8glrkj.png" alt="مزيلات الدهان السريعة" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">مزيلات الدهان السريعة</h3>
                 <span class="product-category">مزيلات دهان عالية الكفاءة تعطي نتائج فورية مع أقل مجهود وأعلى أمان على الأسطح</span>
-                <p><strong>مجالات الاستخدام:</strong> إعادة التشطيب، الصيانة، الورش، المصانع</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> إعادة التشطيب، الصيانة، الورش، المصانع</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/car wash.jpg" alt="كيماويات غسيل السيارات" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">كيماويات غسيل السيارات</h3>
                 <span class="product-category">منظومة متكاملة لغسيل السيارات تشمل الشامبو، مزيل الأتربة، ملمع الإطارات، ملمع التابلوه</span>
-                <p><strong>مجالات الاستخدام:</strong> مغاسل السيارات، مراكز العناية بالسيارات، الاستخدام التجاري</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> مغاسل السيارات، مراكز العناية بالسيارات، الاستخدام التجاري</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/محسن التصاق.png" alt="مواد معالجة الأسطح قبل الدهان" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">مواد معالجة الأسطح قبل الدهان</h3>
                 <span class="product-category">كيماويات تجهيز وتنشيط الأسطح قبل الطلاء لتحسين الالتصاق وجودة الطبقة النهائية</span>
-                <p><strong>مجالات الاستخدام:</strong> البلاستيك، المعادن، الصناعات التحويلية</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> البلاستيك، المعادن، الصناعات التحويلية</p>
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/الصدا.png" alt="مواد حماية ومانعات الصدأ" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">مواد حماية ومانعات الصدأ</h3>
                 <span class="product-category">مواد كيميائية مانعة للصدأ والتآكل توفر حماية طويلة الأمد للأسطح المعدنية</span>
-                <p><strong>مجالات الاستخدام:</strong> الهياكل المعدنية، قطع الغيار، التخزين الصناعي</p>
+                <p><strong><span data-i18n="page.usageAreas">مجالات الاستخدام</span>:</strong> الهياكل المعدنية، قطع الغيار، التخزين الصناعي</p>
             </div>
         </div>
 
@@ -118,7 +142,71 @@
     </div>
 </section>
 
+    <footer class="site-footer site-footer--solo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="images/logouni-transparent.png" alt="Unieast" width="160" height="104" decoding="async" loading="lazy">
+                    </a>
+                    <strong>UNIEAST</strong>
+                    <p data-i18n="footer.tagline">يونى إيست للدهانات والصناعات الكيماوية — حلول طلاء صناعية موثوقة من مصر.</p>
+                    <div class="footer-social" aria-label="Social">
+                        <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.nav">التنقل</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                        <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.products">المنتجات</h4>
+                    <ul>
+                        <li><a href="wood.html" data-i18n="cats.wood">دهانات الأخشاب</a></li>
+                        <li><a href="carcoating.html" data-i18n="cats.car">دهانات السيارات</a></li>
+                        <li><a href="protective.html" data-i18n="cats.protective">دهانات الحماية</a></li>
+                        <li><a href="chemecal.html" data-i18n="cats.chemical">كيماويات بناء</a></li>
+                        <li><a href="specialize.html" data-i18n="cats.specialize">المنتجات المتخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">التواصل</h4>
+                    <p data-i18n="contact.address">مدينة العاشر من رمضان، مصر</p>
+                    <p><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></p>
+                    <div class="footer-phones">
+                        <a class="footer-call-primary" href="tel:01065589002">01065589002</a>
+                        <a class="footer-call-secondary" href="tel:01028224000">01028224000</a>
+                        <a class="footer-call-secondary" href="tel:01004160447">01004160447</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-main">
+                    <p>&copy; <span class="year"></span> Unieast Coating &amp; Chemical Industrial. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+                    <div class="dev-credit">
+                        <span class="dev-label" data-i18n="footer.developedBy">تطوير بواسطة</span>
+                        <span class="dev-names">
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>AMR KAMAL</strong></a>
+                            ·
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>RAVENOX</strong></a>
+                        </span>
+                        <a class="dev-linkedin" href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin" aria-label="LinkedIn — AMR KAMAL / RAVENOX">LinkedIn →</a>
+                    </div>
+                </div>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" data-lang="en">EN</button>
+                    <button type="button" data-lang="ar" class="is-active">AR</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>document.querySelectorAll(".year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 </body>
 </html>
-
-

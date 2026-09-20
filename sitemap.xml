@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://unieastcoating.com/</loc>
+    <loc>https://www.unieastcoating.com/</loc>
   </url>
-
   <url>
-    <loc>https://unieastcoating.com/about</loc>
+    <loc>https://www.unieastcoating.com/index.html</loc>
   </url>
-
   <url>
-    <loc>https://unieastcoating.com/products</loc>
+    <loc>https://www.unieastcoating.com/product.html</loc>
   </url>
-
   <url>
-    <loc>https://unieastcoating.com/contact</loc>
+    <loc>https://www.unieastcoating.com/wood.html</loc>
   </url>
-
+  <url>
+    <loc>https://www.unieastcoating.com/carcoating.html</loc>
+  </url>
+  <url>
+    <loc>https://www.unieastcoating.com/protective.html</loc>
+  </url>
+  <url>
+    <loc>https://www.unieastcoating.com/chemecal.html</loc>
+  </url>
+  <url>
+    <loc>https://www.unieastcoating.com/specialize.html</loc>
+  </url>
+  <url>
+    <loc>https://www.unieastcoating.com/projects.html</loc>
+  </url>
 </urlset>

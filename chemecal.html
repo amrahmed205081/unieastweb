@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="مواد اللصق وأنظمة إنشاء الملاعب الرياضية من شركة يونيست للدهانات والكيماويات الصناعية. اكتشف تشكيلتنا المتنوعة من مواد اللصق عالية الجودة وأنظمة الأرضيات المتخصصة لإنشاء الملاعب الرياضية بمختلف أنواعها. منتجاتنا مصممة لتوفير أداء ممتاز وحماية طويلة الأمد لأسطح الملاعب في مختلف التطبيقات الرياضية. استعرض مجموعتنا اليوم واختر الحل المثالي لاحتياجاتك.">
-    <title>مواد اللصق وأنظمة إنشاء الملاعب الرياضية</title>
+    <title data-i18n="meta.chemicalTitle">كيماويات البناء | Unieast Construction Chemicals</title>
+    <meta name="description" content="مواد اللصق وأنظمة الملاعب الرياضية ومنتجات الإيبوكسي من يونيست.">
+    <link rel="canonical" href="https://www.unieastcoating.com/chemecal.html">
     <link rel="stylesheet" href="style.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logouni.webp" alt="Unieast Logo"></a>
-        </div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="hamburger" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-             <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#products">Products</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-    </header>
-    <h1>مواد اللصق وأنظمة إنشاء الملاعب الرياضية</h1>
 
-    <section class="products-section">
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <img src="images/logouni-transparent.png" alt="Unieast Logo" width="160" height="104" decoding="async">
+        </a>
+        <div class="nav-cluster">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="ar" class="is-active">AR</button>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="القائمة">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="page.breadcrumbHome">الرئيسية</a>
+                <span aria-hidden="true">/</span>
+                <a href="product.html" data-i18n="page.breadcrumbProducts">المنتجات</a>
+                <span aria-hidden="true">/</span>
+                <span data-i18n="cats.chemical">كيماويات بناء</span>
+            </nav>
+            <h1 data-i18n="page.chemicalTitle">مواد اللصق وأنظمة إنشاء الملاعب الرياضية</h1>
+            <p data-i18n="page.chemicalLead">أنظمة أرضيات رياضية ومنتجات إيبوكسي متخصصة.</p>
+        </div>
+    </section>
+
+<section class="products-section">
         <table class="info-table">
     <tbody>
 
         <tr>
-            <th>نبذة عامة</th>
+            <th data-i18n="chem.overview">نبذة عامة</th>
             <td>
                 تقوم الشركة بتصنيع وتوريد جميع الخامات والأنظمة المتخصصة
                 في إنشاء وتجهيز الملاعب والساحات الرياضية بمختلف أنواعها،
@@ -43,7 +64,7 @@
         </tr>
 
         <tr>
-            <th>أنواع الملاعب</th>
+            <th data-i18n="chem.courtTypes">أنواع الملاعب</th>
             <td>
                 ملاعب التنس – ملاعب كرة اليد – ملاعب كرة السلة –
                 ملاعب خماسي – مضامير الجري (التراكات) –
@@ -52,7 +73,7 @@
         </tr>
 
         <tr>
-            <th>أنظمة الأرضيات</th>
+            <th data-i18n="chem.floorSystems">أنظمة الأرضيات</th>
             <td>
                 أنظمة الترتان – أنظمة الأكريليك (هارد / سوفت) –
                 أنظمة النجيل الصناعي – أنظمة الأرضيات المرنة والصلبة.
@@ -60,7 +81,7 @@
         </tr>
 
         <tr>
-            <th>مواد اللصق</th>
+            <th data-i18n="chem.adhesives">مواد اللصق</th>
             <td>
                 مواد لصق النجيل الصناعي – لواصق بولي يوريثان –
                 لواصق إيبوكسي – مواد تثبيت عالية القوة
@@ -69,7 +90,7 @@
         </tr>
 
         <tr>
-            <th>الخامات المصنعة</th>
+            <th data-i18n="chem.materials">الخامات المصنعة</th>
             <td>
                 طبقات أساس – طبقات امتصاص الصدمات –
                 طبقات تسوية – طبقات تشطيب نهائي –
@@ -78,7 +99,7 @@
         </tr>
 
         <tr>
-            <th>خصائص الأنظمة</th>
+            <th data-i18n="chem.properties">خصائص الأنظمة</th>
             <td>
                 مقاومة للعوامل الجوية – مقاومة للاحتكاك –
                 امتصاص الصدمات – ثبات الألوان –
@@ -87,7 +108,7 @@
         </tr>
 
         <tr>
-            <th>مجالات الاستخدام</th>
+            <th data-i18n="chem.applications">مجالات الاستخدام</th>
             <td>
                 الأندية الرياضية – المدارس والجامعات –
                 مراكز الشباب – الصالات المغطاة –
@@ -96,7 +117,7 @@
         </tr>
 
         <tr>
-            <th>الخدمات المقدمة</th>
+            <th data-i18n="chem.services">الخدمات المقدمة</th>
             <td>
                 تصميم الأنظمة – توريد الخامات –
                 الدعم الفني – الإشراف على التنفيذ –
@@ -105,16 +126,16 @@
         </tr>
 
         <tr>
-            <th>الملفات الفنية</th>
+            <th data-i18n="chem.documents">الملفات الفنية</th>
             <td>
-                <a href="pdf/sports-systems.pdf" target="_blank">
+                <a href="pdf/sports-systems.pdf" target="_blank" rel="noopener noreferrer" data-i18n="page.downloadCatalog">
                     تحميل الكتالوج الفني (PDF)
                 </a>
             </td>
         </tr>
 
         <tr>
-            <th>صور المشاريع</th>
+            <th data-i18n="chem.photos">صور المشاريع</th>
             <td>
                 <img src="images/court.jpg" width="200">
                 <img src="images/court2.jpg" width="200">
@@ -128,10 +149,10 @@
 </section>
 
 <section class="products-table">
-    <h2>منتجات الإيبوكسي</h2>
+    <h2 data-i18n="page.epoxyTitle">منتجات الإيبوكسي</h2>
     <img src="images/protectt.jpg" alt="Epoxy Products" style="width: 100%; max-width: 400px; display: block; margin: 20px auto;">
     <div class="products-grid">
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/Generated Image September 23, 2025 - 6_06PM.png" alt="Epoxy Primer Sealer" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">Epoxy Primer Sealer</h3>
@@ -139,7 +160,7 @@
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/Generated Image September 23, 2025 - 6_06PM.png" alt="Epoxy Putty" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">Epoxy Putty</h3>
@@ -147,7 +168,7 @@
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/Generated Image September 23, 2025 - 6_06PM.png" alt="Epoxy Solvent Free Coating" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">Epoxy Solvent Free Coating</h3>
@@ -155,7 +176,7 @@
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/Generated Image September 23, 2025 - 6_06PM.png" alt="Epoxy Self Leveling" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">Epoxy Self Leveling</h3>
@@ -163,7 +184,7 @@
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card reveal">
             <img src="images/WhatsApp Image 2026-01-27 at 6.12.26 PM (2).jpeg" alt="Traffic Paint" class="product-image">
             <div class="product-info">
                 <h3 class="product-name">Traffic Paint</h3>
@@ -173,7 +194,71 @@
     </div>
 </section>
 
+    <footer class="site-footer site-footer--solo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="images/logouni-transparent.png" alt="Unieast" width="160" height="104" decoding="async" loading="lazy">
+                    </a>
+                    <strong>UNIEAST</strong>
+                    <p data-i18n="footer.tagline">يونى إيست للدهانات والصناعات الكيماوية — حلول طلاء صناعية موثوقة من مصر.</p>
+                    <div class="footer-social" aria-label="Social">
+                        <a href="https://www.facebook.com/share/1LG1nim7bq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/uni.east" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.nav">التنقل</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">من نحن</a></li>
+                        <li><a href="product.html" data-i18n="nav.products">المنتجات</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">المشاريع</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.products">المنتجات</h4>
+                    <ul>
+                        <li><a href="wood.html" data-i18n="cats.wood">دهانات الأخشاب</a></li>
+                        <li><a href="carcoating.html" data-i18n="cats.car">دهانات السيارات</a></li>
+                        <li><a href="protective.html" data-i18n="cats.protective">دهانات الحماية</a></li>
+                        <li><a href="chemecal.html" data-i18n="cats.chemical">كيماويات بناء</a></li>
+                        <li><a href="specialize.html" data-i18n="cats.specialize">المنتجات المتخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">التواصل</h4>
+                    <p data-i18n="contact.address">مدينة العاشر من رمضان، مصر</p>
+                    <p><a href="mailto:unieast167@gmail.com">unieast167@gmail.com</a></p>
+                    <div class="footer-phones">
+                        <a class="footer-call-primary" href="tel:01065589002">01065589002</a>
+                        <a class="footer-call-secondary" href="tel:01028224000">01028224000</a>
+                        <a class="footer-call-secondary" href="tel:01004160447">01004160447</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-main">
+                    <p>&copy; <span class="year"></span> Unieast Coating &amp; Chemical Industrial. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></p>
+                    <div class="dev-credit">
+                        <span class="dev-label" data-i18n="footer.developedBy">تطوير بواسطة</span>
+                        <span class="dev-names">
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>AMR KAMAL</strong></a>
+                            ·
+                            <a href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><strong>RAVENOX</strong></a>
+                        </span>
+                        <a class="dev-linkedin" href="https://www.linkedin.com/in/amr-ahmed2025?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin" aria-label="LinkedIn — AMR KAMAL / RAVENOX">LinkedIn →</a>
+                    </div>
+                </div>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" data-lang="en">EN</button>
+                    <button type="button" data-lang="ar" class="is-active">AR</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>document.querySelectorAll(".year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 </body>
 </html>
-
-
